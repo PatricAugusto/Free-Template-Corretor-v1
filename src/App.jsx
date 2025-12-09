@@ -4,6 +4,7 @@ import { HeroSection } from './components/HeroSection';
 import { FeatureSection } from './components/FeatureSection';
 import { PropertiesPreview } from './components/PropertiesPreview';
 import { ContactForm } from './components/ContactForm';
+import { Footer } from './components/Footer';
 
 const Container = styled.div`
   max-width: 1200px;
@@ -23,6 +24,7 @@ function App() {
         <ContactForm />
       </Container>
 
+      <Footer />
     </div>
   );
 }
