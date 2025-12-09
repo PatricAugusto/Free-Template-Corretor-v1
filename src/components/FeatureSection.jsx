@@ -26,7 +26,7 @@ const featuresData = [
 ];
 
 const SectionWrapper = styled.section`
-  padding: 80px 0; /* Espaçamento generoso (whitespace) */
+  padding: 80px 0; 
   background-color: var(--color-background);
   text-align: center;
 `;
@@ -49,27 +49,31 @@ const SectionSubtitle = styled.p`
 
 const FeaturesGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   gap: 30px;
+  
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr; 
+  }
 `;
 
 const FeatureCard = styled.div`
   padding: 30px;
-  border: 1px solid #ddd; /* Borda sutil */
+  border: 1px solid #ddd; 
   border-radius: 4px;
   transition: all 0.3s ease;
-  background-color: white; /* Fundo branco puro */
+  background-color: white; 
   text-align: center;
 
   &:hover {
-    border-color: var(--color-secondary); /* Acento sutil no hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    border-color: var(--color-secondary); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
     transform: translateY(-5px);
   }
 `;
 
 const FeatureIcon = styled.div`
-  color: var(--color-secondary); /* Usa a cor de acento */
+  color: var(--color-secondary); 
   font-size: 2.5rem;
   margin-bottom: 15px;
 `;

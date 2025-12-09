@@ -32,11 +32,16 @@ const HeroContent = styled.div`
   z-index: 2; 
   max-width: 700px; 
   color: var(--color-background); 
-  padding-left: 20px; 
+  padding-left: 100px; 
+
+  @media (max-width: 1024px) {
+    padding-left: 50px;
+  }
 
   @media (max-width: 768px) {
     text-align: center;
-    padding: 0;
+    padding-left: 20px; 
+    padding-right: 20px;
     max-width: 90%;
     margin: 0 auto;
   }

@@ -17,6 +17,11 @@ const NavContainer = styled.div`
   display: flex;
   justify-content: space-between; 
   align-items: center;
+
+  @media (max-width: 768px) {
+    justify-content: center; 
+  }
+
 `;
 
 const Logo = styled.a`
