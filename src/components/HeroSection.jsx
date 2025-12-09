@@ -3,23 +3,26 @@ import styled from 'styled-components';
 import { Button } from './Button';
 
 const HeroWrapper = styled.section`
-  height: 100vh; 
+  min-height: 100vh;   
+  width: 100%;
+  
   display: flex;
-  align-items: center; 
-  justify-content: flex-start; 
+  align-items: center;
+  justify-content: flex-start;
+
   position: relative;
   overflow: hidden;
 
-  background: url('../../public/HeroSectionImg.jpg') no-repeat center center/cover;
+  background-image: url('/HeroSectionImg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 
   &::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(10, 35, 66, 0.65); 
+    inset: 0; 
+    background: rgba(10, 35, 66, 0.65);
     z-index: 1;
   }
 `;
