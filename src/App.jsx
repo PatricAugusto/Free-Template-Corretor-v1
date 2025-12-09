@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { FeatureSection } from './components/FeatureSection';
 import { PropertiesPreview } from './components/PropertiesPreview';
+import { ContactForm } from './components/ContactForm';
 
 const Container = styled.div`
   max-width: 1200px;
@@ -19,7 +20,9 @@ function App() {
       <Container>
         <FeatureSection /> 
         <PropertiesPreview />
+        <ContactForm />
       </Container>
+
     </div>
   );
 }
